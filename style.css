@@ -1,0 +1,98 @@
+:root {
+  --fondo: #0d0d0d;
+  --texto: #f0f0f0;
+  --primario: #00bcd4;
+  --acento: #ffd54f;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  scroll-behavior: smooth;
+}
+
+header.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #111 30%, transparent);
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: var(--primario);
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #008ba3;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #888;
+}
+.scroll-anim.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-anim.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.galeria-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.galeria-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.galeria-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 260px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
