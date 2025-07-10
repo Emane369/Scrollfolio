@@ -8,38 +8,36 @@
 </head>
 <body>
   <header class="hero scroll-anim">
-    <div class="cart-icon" onclick="mostrarCarrito()">🛒 <span id="cart-count">0</span></div>
     <h1>DepreART Studio</h1>
-    <p>Escultura digital, diseño con alma</p>
-    <a href="#galeria" class="cta-btn">🎨 Ver mis obras</a>
+    <p>Escultura digital, diseño con alma 🎨</p>
+    <a href="#galeria" class="cta-btn">Ver mis obras 🎨</a>
+    <div class="cart-icon" onclick="mostrarCarrito()">🛒 <span id="cart-count">0</span></div>
   </header>
 
   <section id="galeria" class="scroll-anim">
-    <h2>🎨 Galería</h2>
+    <h2>Galería</h2>
     <div class="galeria-scroll">
       <div class="item">
-        <img src="imagenes/IMG_4977.JPEG" alt="Anubis" />
+        <img src="imagenes/Photoroom_20250121_204424.jpeg" alt="Anubis" />
         <h3>ANUBIS</h3>
-        <button onclick="agregarAlCarrito('ANUBIS')">🛒 Añadir al carrito</button>
+        <button class="carrito" onclick="agregarAlCarrito('ANUBIS')">🛒 Añadir al carrito</button>
       </div>
       <div class="item">
-        <img src="imagenes/IMG_6350.JPEG" alt="Venom" />
+        <img src="imagenes/IMG_6350.jpeg" alt="Venom" />
         <h3>VENOM</h3>
-        <button onclick="agregarAlCarrito('Venom')">🛒 Añadir al carrito</button>
+        <button class="carrito" onclick="agregarAlCarrito('VENOM')">🛒 Añadir al carrito</button>
       </div>
       <div class="item">
-        <img src="imagenes/Photoroom_20250121_204424.JPEG" alt="Stitch Azul" />
+        <img src="imagenes/IMG_4977.jpeg" alt="Stitch Azul" />
         <h3>STITCH AZUL</h3>
-        <button onclick="agregarAlCarrito('Stitch Azul')">🛒 Añadir al carrito</button>
+        <button class="carrito" onclick="agregarAlCarrito('STITCH AZUL')">🛒 Añadir al carrito</button>
       </div>
     </div>
   </section>
 
   <section class="proceso scroll-anim">
     <h2>🧪 Proceso Creativo</h2>
-    <div class="timeline">
-      <p>Desde la idea hasta la resina: boceto → modelado 3D → impresión → pintura artesanal.</p>
-    </div>
+    <p>Desde la idea hasta la resina: boceto → modelado 3D → impresión → pintura artesanal.</p>
   </section>
 
   <section class="habilidades scroll-anim">
@@ -48,6 +46,28 @@
       <div class="skill">HTML + CSS</div>
       <div class="skill">Resina + STL</div>
       <div class="skill">Interactividad</div>
+    </div>
+  </section>
+
+  <section class="beneficios scroll-anim">
+    <h2>🌟 ¿Por qué elegir DepreArt?</h2>
+    <ul>
+      <li>✔️ Figuras personalizadas y únicas</li>
+      <li>🚚 Envío seguro a todo México</li>
+      <li>🎨 Resina de alta calidad</li>
+      <li>💬 Comunicación directa por WhatsApp</li>
+    </ul>
+  </section>
+
+  <section class="testimonios scroll-anim">
+    <h2>🗣️ Opiniones de Clientes</h2>
+    <div class="testimonio">
+      <p>"La figura de Stitch superó mis expectativas. ¡Calidad increíble!"</p>
+      <span>— Carla G.</span>
+    </div>
+    <div class="testimonio">
+      <p>"Me encantó el diseño personalizado, ¡muy profesional!"</p>
+      <span>— Miguel R.</span>
     </div>
   </section>
 
@@ -61,28 +81,7 @@
     <p>Hecho con 🖤 por Jesús | Scrollfolio 2025</p>
   </footer>
 
-  <script src="script.js"></script>
   <a href="https://wa.me/5213121765225" target="_blank" class="whatsapp-float" title="¿Tienes dudas? ¡Hablemos!">💬</a>
-
+  <script src="script.js"></script>
 </body>
-<section class="beneficios scroll-anim">
-  <h2>🌟 ¿Por qué elegir DepreArt?</h2>
-  <ul>
-    <li>✔️ Figuras personalizadas y únicas</li>
-    <li>🚚 Envío seguro a todo México</li>
-    <li>🎨 Hechas con resina de alta calidad</li>
-    <li>💬 Comunicación directa por WhatsApp</li>
-  </ul>
-</section>
-<section class="testimonios scroll-anim">
-  <h2>🗣️ Opiniones de Clientes</h2>
-  <div class="testimonio">
-    <p>"La figura de Stitch es increíble. ¡Muy detallada y bien pintada!"</p>
-    <span>— Maria G.</span>
-  </div>
-  <div class="testimonio">
-    <p>"Me encantó el diseño personalizado , super profesional."</p>
-    <span>— Miguel R.</span>
-  </div>
-</section>
 </html>
