@@ -28,4 +28,14 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('.scroll-anim').forEach(el => observer.observe(el));
->>>>>>> 3b47ec930e2d17dcd97c051fcc065cfd89fa74dc
+let carrito = [];
+
+function agregarAlCarrito(nombre) {
+  carrito.push(nombre);
+  document.getElementById('cart-count').textContent = carrito.length;
+}
+
+function mostrarCarrito() {
+  alert("Productos en el carrito:\n" + carrito.join('\n'));
+}
+

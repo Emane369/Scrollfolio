@@ -196,4 +196,45 @@ footer {
   margin-bottom: 10px;
   object-fit: cover;
 }
->>>>>>> 3b47ec930e2d17dcd97c051fcc065cfd89fa74dc
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.testimonios {
+  padding: 60px 20px;
+  background: #111;
+  color: #eee;
+}
+
+.testimonio {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+  border-left: 4px solid var(--acento);
+  padding-left: 16px;
+}
+.beneficios ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 2;
+}
+.beneficios li::before {
+  content: '🧪';
+  margin-right: 8px;
+}
+
